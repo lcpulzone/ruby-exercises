@@ -32,4 +32,10 @@ class Centaur
         @activity_count += 1
         "Clop clop clop clop!"
     end
+
+    def sleep
+        if standing? == true
+            "NO!"
+        end
+    end
 end
