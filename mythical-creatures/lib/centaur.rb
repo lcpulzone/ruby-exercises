@@ -1,10 +1,11 @@
 class Centaur
-    attr_reader :name, :breed, :shoot, :run
+    attr_reader :name, :breed
 
     def initialize(name, breed)
         @name = name
         @breed = breed
         @activity_count = 0
+        @laying_count = 0
     end
 
     def cranky?
@@ -16,7 +17,11 @@ class Centaur
     end
 
     def standing?
-        true
+        if @laying_count == 0
+            true
+        else
+            false
+        end
     end
 
     def shoot
@@ -39,5 +44,11 @@ class Centaur
         end
     end
 
-        
+    def lay_down
+        @laying_count += 1
+    end
+
+    def laying?
+        return true if @laying_count >= 1
+    end
 end
