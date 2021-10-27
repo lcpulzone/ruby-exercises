@@ -17,7 +17,7 @@ RSpec.describe Vampire do
     expect(vampire.pet).to eq('bat')
   end
 
-  xit 'can keep other pets' do
+  it 'can keep other pets' do
     vampire = Vampire.new('Varney', 'fox')
     expect(vampire.pet).to eq('fox')
   end
