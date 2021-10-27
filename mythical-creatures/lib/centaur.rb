@@ -21,7 +21,11 @@ class Centaur
 
     def shoot
         @activity_count += 1
-        "Twang!!!"
+        if cranky? == true
+            "NO!"
+        else
+            "Twang!!!"
+        end
     end
 
     def run
