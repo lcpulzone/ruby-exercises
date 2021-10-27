@@ -7,4 +7,8 @@ class Centaur
         @shoot = "Twang!!!"
         @run = "Clop clop clop clop!"
     end
+
+    def cranky?
+        false
+    end
 end
