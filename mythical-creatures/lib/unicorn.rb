@@ -1,9 +1,9 @@
 class Unicorn
   attr_reader :name, :color
 
-  def initialize(name)
+  def initialize(name, color = 'silver')
     @name = name
-    @color = 'silver'
+    @color = color
   end
 
   def silver?
