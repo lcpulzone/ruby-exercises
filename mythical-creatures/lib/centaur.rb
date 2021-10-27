@@ -11,4 +11,8 @@ class Centaur
     def cranky?
         false
     end
+
+    def standing?
+        true
+    end
 end
