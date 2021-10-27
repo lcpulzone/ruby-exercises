@@ -4,15 +4,28 @@ class Centaur
     def initialize(name, breed)
         @name = name
         @breed = breed
-        @shoot = "Twang!!!"
-        @run = "Clop clop clop clop!"
+        @activity_count = 0
     end
 
     def cranky?
-        false
+        if @activity_count >=3 
+            true
+        else
+            false
+        end
     end
 
     def standing?
         true
+    end
+
+    def shoot
+        @activity_count += 1
+        "Twang!!!"
+    end
+
+    def run
+        @activity_count += 1
+        "Clop clop clop clop!"
     end
 end
