@@ -7,7 +7,7 @@ RSpec.describe Centaur do
     expect(centaur.name).to eq('George')
   end
 
-  xit 'has a horse breed' do
+  it 'has a horse breed' do
     centaur = Centaur.new('George', 'Palomino')
     expect(centaur.breed).to eq('Palomino')
   end
@@ -27,7 +27,7 @@ RSpec.describe Centaur do
     expect(centaur.cranky?).to be false
   end
 
-  it 'when first created, it is standing up' do
+  xit 'when first created, it is standing up' do
     centaur = Centaur.new('George', 'Palomino')
     expect(centaur.standing?).to be true
   end
