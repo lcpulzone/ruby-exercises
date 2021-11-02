@@ -43,7 +43,7 @@ class Centaur
   end
 
   def sleep
-    if standing? == true
+    if standing?
       "NO!"
     end
   end
@@ -55,4 +55,8 @@ class Centaur
   def laying?
     return true if @laying_count >= 1
   end
+	
+	def stand_up
+		@laying_count -= 1
+	end
 end
