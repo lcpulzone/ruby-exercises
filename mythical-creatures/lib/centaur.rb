@@ -58,4 +58,12 @@ class Centaur
 	def stand_up
 		@laying_count -= 1
 	end
+
+	def drink_potion
+		@activity_count = 0
+	end
+
+	def rested?
+		return true if @activity_count = 0
+	end
 end
