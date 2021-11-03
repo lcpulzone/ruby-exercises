@@ -43,9 +43,8 @@ class Centaur
   end
 
   def sleep
-    if standing?
-      "NO!"
-    end
+    return "NO!" if standing?
+    @activity_count = 0
   end
 
   def lay_down
