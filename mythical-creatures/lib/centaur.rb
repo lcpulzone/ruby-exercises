@@ -6,6 +6,7 @@ class Centaur
     @breed = breed
     @activity_count = 0
     @laying_count = 0
+		@potions_drank = 0
   end
 
   def cranky?
@@ -60,14 +61,22 @@ class Centaur
 	end
 
 	def drink_potion
-		@activity_count = 0
+		@potions_drank += 1
 	end
 
 	def rested?
-		if @activity_count = 0 && standing?
+		if standing? && @potions_drank >= 1
 			true
 		else
 			false
 		end
+	end
+
+	def sick?
+		if rested? && @potions_drank >= 1
+			true
+		else
+			false
+		end	
 	end
 end
