@@ -64,6 +64,10 @@ class Centaur
 	end
 
 	def rested?
-		return true if @activity_count = 0
+		if @activity_count = 0 && standing?
+			true
+		else
+			false
+		end
 	end
 end
