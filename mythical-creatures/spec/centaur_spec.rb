@@ -112,15 +112,19 @@ RSpec.describe Centaur do
     expect(centaur.run).to eq('Clop clop clop clop!')
   end
 
-  xit 'becomes rested after drinking a potion' do
-    # your code here
+  it 'becomes rested after drinking a potion' do
+		centaur = Centaur.new('George', 'Palomino')
+
+		centaur.drink_potion
+
+		expect(centaur.rested?).to eq(true)
   end
 
   xit 'can only drink a potion whilst standing' do
     # your code here
   end
 
-  xit 'gets stick if a potion is drunk while rested' do
+  xit 'gets sick if a potion is drunk while rested' do
     # your code here
   end
 end
