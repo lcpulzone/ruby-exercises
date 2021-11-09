@@ -12,11 +12,7 @@ class Hobbit
 	end
 
 	def adult?
-		if @age <= 32
-			false
-		else
-			true
-		end
+		@age >= 33
 	end
 
 	def old?
