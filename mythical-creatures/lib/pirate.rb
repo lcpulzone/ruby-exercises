@@ -15,5 +15,8 @@ class Pirate
 	def commit_heinous_act
 		@acts_commited += 1
 	end
-	
+
+	def rob_ship
+		@booty += 100
+	end
 end
