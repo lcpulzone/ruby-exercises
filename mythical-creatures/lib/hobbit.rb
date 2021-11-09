@@ -10,4 +10,12 @@ class Hobbit
 	def celebrate_birthday
 		@age += 1
 	end
+
+	def adult?
+		if @age <= 32
+			false
+		else
+			true
+		end
+	end
 end
