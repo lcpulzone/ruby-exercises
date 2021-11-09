@@ -9,11 +9,7 @@ class Dragon
 	end
 
 	def hungry?
-		if @hunger_level <= 2
-			true 
-		else
-			false
-		end
+		@hunger_level <= 2
 	end
 
 	def eat
