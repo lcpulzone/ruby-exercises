@@ -61,6 +61,8 @@ RSpec.describe Hobbit do
   it 'is old at the age of 101' do
     hobbit = Hobbit.new('Otho')
 
+		expect(hobbit.old?).to be false
+		
     101.times do
 			hobbit.celebrate_birthday
 		end
