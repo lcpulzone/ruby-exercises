@@ -10,19 +10,11 @@ class Centaur
   end
 
   def cranky?
-    if @activity_count >=3 
-      true
-    else
-      false
-    end
+    @activity_count >=3 
   end
 
   def standing?
-    if @laying_count == 0
-      true
-    else
-      false
-    end
+    @laying_count == 0
   end
 
   def shoot
@@ -53,7 +45,7 @@ class Centaur
   end
 
   def laying?
-    return true if @laying_count >= 1
+    @laying_count >= 1
   end
 	
 	def stand_up
@@ -65,18 +57,10 @@ class Centaur
 	end
 
 	def rested?
-		if standing? && @potions_drank >= 1
-			true
-		else
-			false
-		end
+		standing? && @potions_drank >= 1
 	end
 
 	def sick?
-		if rested? && @potions_drank >= 1
-			true
-		else
-			false
-		end	
+		rested? && @potions_drank >= 1
 	end
 end
