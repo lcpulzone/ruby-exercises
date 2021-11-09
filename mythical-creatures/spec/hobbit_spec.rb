@@ -82,6 +82,5 @@ RSpec.describe Hobbit do
     hobbit = Hobbit.new('Otho')
 
 		expect(hobbit.is_short?).to be true
-    # check that is_short? returns true
   end
 end
