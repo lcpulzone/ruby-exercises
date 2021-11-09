@@ -17,7 +17,7 @@ RSpec.describe Hobbit do
     expect(hobbit.disposition).to eq('homebody')
   end
 
-  xit 'can have a different disposition' do
+  it 'can have a different disposition' do
     hobbit = Hobbit.new('Frodo', 'adventurous')
     expect(hobbit.disposition).to eq('adventurous')
   end
