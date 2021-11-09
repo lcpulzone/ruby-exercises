@@ -43,7 +43,7 @@ RSpec.describe Hobbit do
     expect(hobbit.adult?).to be false
   end
 
-  xit 'comes of age at 33' do
+  it 'comes of age at 33' do
     hobbit = Hobbit.new('Otho')
 
     33.times do
