@@ -20,11 +20,10 @@ class Hobbit
 	end
 
 	def old?
-		if @age >= 101
-			true 
-		else
-			false
-		end
+		@age >= 101
 	end
 	
+	def has_ring?
+		@name == "Frodo"
+	end
 end
