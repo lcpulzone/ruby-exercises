@@ -3,5 +3,10 @@ class Wizard
 
 	def initialize(name)
 		@name = name
+		@bearded = true
+	end
+
+	def bearded?	
+		@bearded
 	end
 end
