@@ -9,4 +9,8 @@ class Wizard
 	def bearded?	
 		@bearded
 	end
+
+	def incantation(phrase)
+		"sudo #{phrase}"
+	end
 end
