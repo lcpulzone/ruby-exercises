@@ -17,7 +17,7 @@ RSpec.describe Wizard do
     expect(wizard.bearded?).to be true
   end
 
-  xit 'is not always bearded' do
+  it 'is not always bearded' do
     wizard = Wizard.new('Valerie', bearded: false)
     expect(wizard.bearded?).to be false
   end
