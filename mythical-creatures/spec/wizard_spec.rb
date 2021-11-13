@@ -32,8 +32,9 @@ RSpec.describe Wizard do
     expect(wizard.incantation('rm -rf /home/mirandax')).to eq('sudo rm -rf /home/mirandax')
   end
 
-  xit 'starts rested' do
-    # create wizard
+  it 'starts rested' do
+    wizard = Wizard.new('Sal', bearded: true)
+		expect(wizard.rested?).to be true
     # .rested? returns true
   end
 
