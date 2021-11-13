@@ -38,9 +38,9 @@ RSpec.describe Wizard do
     # .rested? returns true
   end
 
-  xit 'can cast spells' do
-    # create wizard
-    # .cast returns "MAGIC MISSILE!"
+  it 'can cast spells' do
+    wizard = Wizard.new('Sal', bearded: true)
+		expect(wizard.cast).to eq("MAGIC MISSLE!")
   end
 
   xit 'gets tired after casting three spells' do
