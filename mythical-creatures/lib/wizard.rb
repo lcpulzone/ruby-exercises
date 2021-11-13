@@ -4,6 +4,7 @@ class Wizard
 	def initialize(name, bearded: true)
 		@name = name
 		@bearded = bearded
+		@energy_level = 3
 	end
 
 	def bearded?	
@@ -12,5 +13,9 @@ class Wizard
 
 	def incantation(phrase)
 		"sudo #{phrase}"
+	end
+
+	def rested?
+		@energy_level > 1  
 	end
 end
