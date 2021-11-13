@@ -16,10 +16,11 @@ class Wizard
 	end
 
 	def rested?
-		@energy_level > 1  
+		@energy_level >= 1  
 	end
 
 	def cast
+		@energy_level -= 1
 		"MAGIC MISSLE!"
 	end
 	
