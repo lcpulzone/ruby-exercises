@@ -9,7 +9,6 @@ class Medusa
 	def stare(victim)
 		@statues << victim
 	end
-		
 end
 
 class Person
@@ -17,5 +16,9 @@ class Person
 
 	def initialize(name)
 		@name = name
+	end
+
+	def stoned?
+		
 	end
 end
